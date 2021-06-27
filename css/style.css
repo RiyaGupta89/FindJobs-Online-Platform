@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather Sans', sans-serif;
+    color: white;
+    background: #11121A;
+}
+
+header {
+    background-color: #1C1C24;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.header-container {
+    padding: 0 25px;
+    max-width: 1250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header-container .logo {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.header-container .logo img {
+    height: 100%;
+    border-radius: 50%;
+}
+
+.search {
+    max-width: 1250px;
+    width: 100%;
+    margin: auto;
+    padding: 0 25px;
+}
+
+.search-container {
+    background-color: #1C1C24;
+    height: 60px;
+    border-radius: 10px;
+    border: 2px solid #222328;
+    display: flex;
+    overflow: hidden;
+}
+
+.input-container {
+    flex-grow: 1;
+    align-items: center;
+    display: flex;
+}
+
+.input-container input {
+    flex-grow: 1;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.input-container i {
+    font-size: 20px;
+    margin-left: 25px;
+}
+
+.button-container {
+    background: #3060FF;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+
+.button-container:hover {
+    background-color: #5a81ff;
+}
+
+.jobs-list {
+    background-color: #11121A;
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px;
+}
+
+.jobs-list h1 {
+    margin-left: 25px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.jobs-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    background-color: #11121A;
+}
+
+.job-title {
+    border-radius: 10px;
+    background: #1C1C24;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    padding: 30px;
+    transition: transform 0.2s;
+}
+
+.job-title:hover {
+    transform: scale(1.05);
+}
+
+.top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.rolename {
+    padding: 20px 0;
+}
+
+.rolename span {
+    font-size: 22px;
+}
+
+.description {
+    height: 105px;
+    overflow: hidden;
+    font-size: 18px;
+    flex-grow: 1;
+    color: #96939B;
+}
+
+.buttons {
+    color: black;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+}
+
+.button {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: #96939B;
+    background-color: #2E2E39;
+    font-size: 14px;
+}
+
+.apply-now {
+    color: white;
+    background-color: #3060FF;
+    margin-right: 15px;
+}
+
+@media screen and (max-width: 940px) {
+    .jobs-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .jobs-container {
+        grid-template-columns: 1fr;
+    }
+}
